@@ -1,6 +1,6 @@
 ## Basic PacMan game using only  HTML, CSS, JavaScript...
 
-<img src="screenshot.PMG" alt="">
+<img src="screenshot.PNG" alt="">
 
 ## Most web pages are built using these three technologies: HTML, CSS, and JavaScript. Here is some explanations and how I am gonna use these in this game.
 
