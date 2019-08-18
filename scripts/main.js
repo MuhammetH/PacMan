@@ -116,3 +116,50 @@ function drawMap() {
 function eraseMap() {
   document.body.removeChild(map);
 }
+
+//---------------------------------------------
+//---------- Movement functions ---------------
+//---------------------------------------------
+
+// Each function does the following:
+// - set pacman's direction so that we show the correct image
+// - check to see if we hit a wall
+// - if we didn't hit a wall, set pacman's old location to empty space
+// - update pacman's location
+// - draw pacman in the new location
+
+function moveDown() {
+  pacman.direction = 'down';
+  if (gameData[pacman.y+1][pacman.x] !== WALL) {
+    gameData[pacman.y][pacman.x] = GROUND;
+    pacman.y = pacman.y + 1 ;
+    gameData[pacman.y][pacman.x] = PACMAN;
+  }
+}
+
+function moveUp() {
+  pacman.direction = 'up';
+  if (gameData[pacman.y-1][pacman.x] !== WALL) {
+    gameData[pacman.y][pacman.x] = GROUND;
+    pacman.y = pacman.y - 1;
+    gameData[pacman.y][pacman.x] = PACMAN;
+  }
+}
+
+function moveLeft() {
+  pacman.direction = 'left';
+  if (gameData[pacman.y][pacman.x-1] !== WALL) {
+    gameData[pacman.y][pacman.x] = GROUND;
+    pacman.x = pacman.x - 1 ;
+    gameData[pacman.y][pacman.x] = PACMAN;
+  }
+}
+
+function moveRight() {
+  pacman.direction = 'right';
+  if (gameData[pacman.y][pacman.x+1] !== WALL) {
+    gameData[pacman.y][pacman.x] = GROUND;
+    pacman.x = pacman.x + 1 ;
+    gameData[pacman.y][pacman.x] = PACMAN;
+  }
+}
