@@ -37,3 +37,8 @@
   - As you click, tap, scroll, and type, your browser responds. Each of these interactions is called an event.
   - You can customize how the browser responds by writing functions that handle different kinds of events.
 
+## To do's
+
+- add scrore board.
+- make the map complex.
+- add profile. 
