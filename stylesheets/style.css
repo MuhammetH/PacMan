@@ -48,18 +48,17 @@ body > div {
 
 /* Walls are blue with an off-blue border. */
 .wall {
-  background-color: blue;
-  border: 2px solid cornflowerblue;
+  background-color: red;
+  border: 2px solid purple;
 }
 
 /* Coins are made by rounding the corners and  */
 /* making them much smaller than 50px by 50px. */
 .coin {
-  background-color: yellow;
+  background-color: gold;
   border-radius: 50%;
   transform: scale(0.3);
 }
-
 
 /*-----------------------------------------------------------*/
 /* We make pacman appear to face different directions by     */

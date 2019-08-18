@@ -163,3 +163,34 @@ function moveRight() {
     gameData[pacman.y][pacman.x] = PACMAN;
   }
 }
+// This function sets up the listener for the whole page.
+// When the user presses a key, we run a function
+// that handles that key press.
+function setupKeyboardControls() {
+  document.addEventListener('keydown', function (e) {
+
+    // As far as the browser is concerned, each key on the keyboard
+    // is associated with a numeric value.
+    // After some experimenting, you can discover which numeric values
+    // correspond to the arrow keys.
+
+    // Each time the user moves, we recalculate Pacman's location,
+    // update the
+    if (e.keyCode === 37) {         // left arrow is 37
+      moveLeft();
+
+    } else if (e.keyCode === 38) {  // up arrow is 38
+      moveUp();
+
+    } else if (e.keyCode === 39){   // right arrow is 39
+      moveRight();
+
+    } else if (e.keyCode === 40){   // down arrow is 40
+      moveDown();
+    }
+
+    // After every move, we erase the map and redraw it.
+    eraseMap();
+    drawMap();
+  });
+}
