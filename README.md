@@ -1,4 +1,4 @@
-#Basic PacMan game using only  HTML, CSS, JavaScript...
+## Basic PacMan game using only  HTML, CSS, JavaScript...
 
 ## Most web pages are built using these three technologies: HTML, CSS, and JavaScript. Here is some explanations and how I am gonna use these in this game.
 
@@ -35,4 +35,3 @@
   - As you click, tap, scroll, and type, your browser responds. Each of these interactions is called an event.
   - You can customize how the browser responds by writing functions that handle different kinds of events.
 
-  

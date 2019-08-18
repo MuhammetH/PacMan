@@ -194,3 +194,16 @@ function setupKeyboardControls() {
     drawMap();
   });
 }
+//----------------------------------------------
+// -------- Main game setup function -----------
+//----------------------------------------------
+function main() {
+  // Initialize the game by drawing the map and setting up the
+  // keyboard controls.
+  drawMap();
+  setupKeyboardControls();
+}
+
+// Finally, after we define all of our functions, we need to start
+// the game.
+main();
